@@ -75,10 +75,10 @@ func main() {
 		}
 		schema += "\n"
 	}
-
+	var endpoint_port = os.Getenv("ENDPOINT_PORT")
 	http.HandleFunc("/getsql", handleSQLRequest)
-	log.Println("Server başlatıldı: http://localhost:8888")
-	log.Fatal(http.ListenAndServe(":8888", nil))
+	log.Printf("Sunucu http://localhost:%s adresinde başlatıldı...\n", endpoint_port)
+	log.Fatal(http.ListenAndServe(":"+endpoint_port, nil))
 }
 
 func enableCORS(w http.ResponseWriter) {

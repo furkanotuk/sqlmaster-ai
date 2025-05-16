@@ -33,7 +33,7 @@ DB_PASS=your_mysql_password
 DB_HOST=localhost  
 DB_PORT=3306  
 DB_NAME=your_database_name  
-
+ENDPOINT_PORT=8888
 OPENAI_API_KEY=your_openai_api_key
 ```
 
@@ -45,7 +45,7 @@ OPENAI_API_KEY=your_openai_api_key
 go run main.go
 ```
 
-The server will start and listen on the default port (e.g., 8080).
+The server will start and listen on the default port (e.g., 8888).
 
 ---
 
