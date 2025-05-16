@@ -67,8 +67,7 @@ Generate a MySQL query based on your natural language prompt.
 
 ```json
 {
-  "prompt": "Write a query to get all users created in the last month",
-  "query": "SELECT * FROM users WHERE created_at >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);"
+  "sql": "SELECT * FROM users WHERE created_at >= DATE_SUB(CURDATE(), INTERVAL 1 MONTH);"
 }
 ```
 
